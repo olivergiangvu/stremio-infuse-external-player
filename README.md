@@ -5,7 +5,7 @@ Use with Stremio Web 5.0 on macOS
 Select External Player as MPV
 
 The Apple Script use for this:
-" on open location schemeUrl
+        --on open location schemeUrl
 	set a to "https:"
 	set oldDelims to AppleScript's text item delimiters
 	-- This saves Applescript's old text item delimiters to the variable oldDelims.
@@ -19,5 +19,5 @@ The Apple Script use for this:
 	--display alert "done " & pa
 	do shell script "open -g 'infuse://x-callback-url/play?url='" & pa
 	-- This display the result
-end open location"
+        end open location
 
